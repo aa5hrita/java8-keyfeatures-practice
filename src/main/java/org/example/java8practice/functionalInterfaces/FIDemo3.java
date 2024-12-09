@@ -1,6 +1,8 @@
 package org.example.java8practice.functionalInterfaces;
 
 
+import org.example.java8practice.functionalInterfaces.utility.Person;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
@@ -32,35 +34,8 @@ public class FIDemo3 {
         for (Person person : persons) greetPeopleConsumerFunction.accept(person);
 
         System.out.println("Using foreach--------------- ");
-        // The lambda passed to the List.forEach method implements the
-        // Consumer functional interface:
+        // The lambda passed to the List.forEach() method implements the Consumer functional interface
         persons.forEach((person -> System.out.println("Greetings --- " + "Name: " + person.getName() + " Age: " + person.getAge())));
     }
 }
 
-class Person {
-    private String name;
-    private int age;
-
-    public Person(String name, int age) {
-        super();
-        this.name = name;
-        this.age = age;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-}

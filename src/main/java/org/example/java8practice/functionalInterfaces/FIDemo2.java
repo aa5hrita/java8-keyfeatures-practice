@@ -1,5 +1,8 @@
 package org.example.java8practice.functionalInterfaces;
 
+import org.example.java8practice.functionalInterfaces.utility.PersonDTO;
+import org.example.java8practice.functionalInterfaces.utility.PersonEntity;
+
 import java.util.function.Function;
 
 // A Function is a functional interface whose sole purpose is to return any result by working on a single input argument.
@@ -23,56 +26,3 @@ public class FIDemo2 {
     }
 }
 
-class PersonEntity {
-    private String name;
-    private int age;
-
-    public PersonEntity(String name, int age) {
-        super();
-        this.name = name;
-        this.age = age;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-}
-
-class PersonDTO {
-    private String name;
-    private int age;
-
-    public PersonDTO(String name, int age) {
-        super();
-        this.name = name;
-        this.age = age;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-}
