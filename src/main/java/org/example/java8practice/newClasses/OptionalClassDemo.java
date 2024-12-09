@@ -1,8 +1,8 @@
-package org.example.java8practice.optional;
+package org.example.java8practice.newClasses;
 
 import java.util.Optional;
 
-public class OCDemo1 {
+public class OptionalClassDemo {
     public static void main(String[] args) {
 
         optionalClassStaticMethodsDemo();
