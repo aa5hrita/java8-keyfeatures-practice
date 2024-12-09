@@ -9,7 +9,7 @@ class RunnableImpl implements Runnable {
     }
 }
 
-public class FEDemo5 {
+public class FIDemo5 {
 
     public static void main(String[] args) {
         //traditional approach
